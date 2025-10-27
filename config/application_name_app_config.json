@@ -12,10 +12,11 @@
 		},
 		"connection":{
 			"config":{
-				"database": "database_name",
-				"user": "database_username",
-				"host": "localhost",
-				"port": 8889
+				"database": "research_paper_collaboration_network",
+				"user": "root",
+				"password": "barbieida",
+				"host": "127.0.0.1",
+				"port": 3306
 			}
 		}
 	}

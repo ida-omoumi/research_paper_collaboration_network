@@ -15,6 +15,10 @@ class UserInterface(ApplicationBase):
 				   logfile_prefix_name=self.META["log_prefix"])
         self.DB = AppServices(config)
         self._logger.log_debug(f'{inspect.currentframe().f_code.co_name}:It works!')
+        query = 'SELECT * FROM Papers;'
+        results = self.DB.query_dosomething(query)
+        self._logger.log_debug(f'{inspect.currentframe().f_code.co_name}:Query line works!')
+
 
 
 
@@ -22,3 +26,8 @@ class UserInterface(ApplicationBase):
     def start(self):
         """Start main user interface."""
         self._logger.log_debug(f'{inspect.currentframe().f_code.co_name}: User interface started!')
+        query = 'SELECT * FROM Papers;'
+        results = self.DB.query_dosomething(query)
+        self._logger.log_debug(f'{inspect.currentframe().f_code.co_name}:Query line works!')
+        for row in results:
+            self._logger.log_debug(f'{inspect.currentframe().f_code.co_name}: Row: {row}')

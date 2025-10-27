@@ -23,14 +23,15 @@ class MySQLPersistenceWrapper(ApplicationBase):
 		self.DB_CONFIG['database'] = \
 			self.DATABASE["connection"]["config"]["database"]
 		self.DB_CONFIG['user'] = self.DATABASE["connection"]["config"]["user"]
+		self.DB_CONFIG['password'] = self.DATABASE["connection"]["config"]["password"]
 		self.DB_CONFIG['host'] = self.DATABASE["connection"]["config"]["host"]
 		self.DB_CONFIG['port'] = self.DATABASE["connection"]["config"]["port"]
 
 		self._logger.log_debug(f'{inspect.currentframe().f_code.co_name}: DB Connection Config Dict: {self.DB_CONFIG}')
 
 		# Database Connection
-		#self._connection_pool = \
-		#	self._initialize_database_connection_pool(self.DB_CONFIG)
+		self._connection_pool = \
+			self._initialize_database_connection_pool(self.DB_CONFIG)
 		
 
 		# SQL String Constants
@@ -40,6 +41,17 @@ class MySQLPersistenceWrapper(ApplicationBase):
 
 
 	# MySQLPersistenceWrapper Methods
+	def execute_query(self, query:str, params:tuple=None)->list:
+		self._logger.log_debug(f'Running query...')
+		connection = self._connection_pool.get_connection()
+		db_cursor = connection.cursor(dictionary=True)
+		db_cursor.execute(query, params or ())
+		results = db_cursor.fetchall()
+		db_cursor.close()
+		connection.close()
+		return results
+	#add ex
+	
 
 
 
