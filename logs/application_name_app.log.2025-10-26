@@ -1,0 +1,44 @@
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:08:17,262:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:08:17,262:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:08:17,263:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:08:17,322:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:22:15,458:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:22:15,458:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:22:15,458:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:22:15,512:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-10-27 10:22:15,512:__init__:It works!
+DEBUG:UserInterface:2025-10-27 10:22:15,512:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:22:15,512:Running query...
+DEBUG:UserInterface:2025-10-27 10:22:15,513:__init__:Query line works!
+DEBUG:UserInterface:2025-10-27 10:22:15,513:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:30:02,028:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:30:02,028:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:30:02,028:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:30:02,080:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-10-27 10:30:02,080:__init__:It works!
+DEBUG:UserInterface:2025-10-27 10:30:02,080:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:30:02,080:Running query...
+DEBUG:UserInterface:2025-10-27 10:30:02,081:__init__:Query line works!
+DEBUG:UserInterface:2025-10-27 10:30:02,081:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 10:30:02,082:Running query...
+DEBUG:UserInterface:2025-10-27 10:30:02,082:start:Query line works!
+DEBUG:UserInterface:2025-10-27 10:30:02,082:start: Row: {'idPaper': 1, 'PaperName': 'PaperNo1'}
+DEBUG:MySQLPersistenceWrapper:2025-10-27 18:27:58,775:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 18:27:58,775:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-10-27 18:27:58,775:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-10-27 18:27:58,853:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-10-27 18:27:58,853:__init__:It works!
+DEBUG:UserInterface:2025-10-27 18:27:58,853:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 18:27:58,853:Running query...
+DEBUG:UserInterface:2025-10-27 18:27:58,866:__init__:Query line works!
+DEBUG:UserInterface:2025-10-27 18:27:58,866:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-10-27 18:27:58,866:Running query...
+DEBUG:UserInterface:2025-10-27 18:27:58,866:start:Query line works!
+DEBUG:UserInterface:2025-10-27 18:27:58,866:start: Row: {'idPaper': 2, 'PaperName': 'PaperNo1'}
+DEBUG:UserInterface:2025-10-27 18:27:58,866:start: Row: {'idPaper': 3, 'PaperName': 'PaperNo1'}
+DEBUG:UserInterface:2025-10-27 18:27:58,866:start: Row: {'idPaper': 4, 'PaperName': 'PaperNo1'}
+DEBUG:AppServices:2025-11-10 10:56:48,058:__init__:It works!
+DEBUG:UserInterface:2025-11-10 10:56:48,058:__init__:It works!
+DEBUG:UserInterface:2025-11-10 10:56:48,073:__init__:Query line works!
+DEBUG:UserInterface:2025-11-10 10:56:48,073:start: User interface started!
+DEBUG:UserInterface:2025-11-10 10:56:48,074:start:Query line works!
