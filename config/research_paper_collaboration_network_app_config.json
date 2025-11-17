@@ -13,11 +13,11 @@
 		},
 		"connection":{
 			"config":{
-				"database": "research_paper_collaboration_network",
-				"user": "root",
-				"password": "barbieida",
-				"host": "127.0.0.1",
-				"port": 3306
+				"database": "research_paper_network",
+				"user": "idaloo",
+				"password": "",
+				"host": "localhost",
+				"port": 8888
 			}
 		}
 	}
