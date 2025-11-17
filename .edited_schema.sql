@@ -4,23 +4,16 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
--- -----------------------------------------------------
--- Schema mydb
--- -----------------------------------------------------
--- -----------------------------------------------------
--- Schema research_paper_collaboration_network
--- -----------------------------------------------------
+-- Clean start: remove any existing version of the schema
 DROP SCHEMA IF EXISTS `research_paper_collaboration_network` ;
 
--- -----------------------------------------------------
--- Schema research_paper_collaboration_network
--- -----------------------------------------------------
+-- Create the research_paper_collaboration_network database and switch to it 
+
 CREATE SCHEMA IF NOT EXISTS `research_paper_collaboration_network` DEFAULT CHARACTER SET utf8mb3 ;
 USE `research_paper_collaboration_network` ;
 
--- -----------------------------------------------------
--- Table `research_paper_collaboration_network`.`authors`
--- -----------------------------------------------------
+-- Table: authors
+-- Holds basic author info (first and last names)
 CREATE TABLE IF NOT EXISTS `research_paper_collaboration_network`.`authors` (
   `author_id` INT NOT NULL AUTO_INCREMENT,
   `author_first_name` VARCHAR(45) NOT NULL,
@@ -32,9 +25,9 @@ AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb3;
 
 
--- -----------------------------------------------------
--- Table `research_paper_collaboration_network`.`papers`
--- -----------------------------------------------------
+-- Table: papers
+-- Stores paper titles; each paper gets a unique ID
+
 CREATE TABLE IF NOT EXISTS `research_paper_collaboration_network`.`papers` (
   `paper_id` INT NOT NULL AUTO_INCREMENT,
   `paper_name` VARCHAR(45) NOT NULL,
@@ -44,14 +37,14 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb3;
 
+-- Table: paper_author_xref
+-- Links authors and papers (many-to-many relationship)
 
--- -----------------------------------------------------
--- Table `research_paper_collaboration_network`.`paper_author_xref`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `research_paper_collaboration_network`.`paper_author_xref` (
   `paper_author_xref_id` INT NOT NULL AUTO_INCREMENT,
   `paper_author_xref_papers_id` INT NOT NULL,
   `paper_author_xref_authors_id` INT NOT NULL,
+  `contribution_percent` DECIMAL(5,2) DEFAULT NULL, -- need to update
   PRIMARY KEY (`paper_author_xref_id`),
   UNIQUE INDEX `idPaperAuthorXref_UNIQUE` (`paper_author_xref_id` ASC) VISIBLE,
   INDEX `PapersAuthorsXref_AuthorsID_idx` (`paper_author_xref_authors_id` ASC) VISIBLE,
@@ -70,10 +63,9 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb3;
 
+-- Table: paper_citations
+-- Keeps track of which paper cites which
 
--- -----------------------------------------------------
--- Table `research_paper_collaboration_network`.`paper_citations`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `research_paper_collaboration_network`.`paper_citations` (
   `paper_citations_id` INT NOT NULL AUTO_INCREMENT,
   `citing_paper_id` INT NOT NULL,
@@ -95,19 +87,17 @@ ENGINE = InnoDB;
 
 USE `research_paper_collaboration_network` ;
 
--- -----------------------------------------------------
--- Placeholder table for view `research_paper_collaboration_network`.`ViewPapers`
--- -----------------------------------------------------
+
+-- Placeholder table for view 
 CREATE TABLE IF NOT EXISTS `research_paper_collaboration_network`.`ViewPapers` (`paper_id` INT, `paper_name` INT, `author_name` INT);
 
--- -----------------------------------------------------
--- Placeholder table for view `research_paper_collaboration_network`.`ViewPaperNetwork`
--- -----------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS `research_paper_collaboration_network`.`ViewPaperNetwork` (`citing_paper` INT, `citing_authors` INT, `cited_paper` INT);
 
--- -----------------------------------------------------
--- View `research_paper_collaboration_network`.`ViewPapers`
--- -----------------------------------------------------
+
+-- View: ViewPapers
+-- Shows each paper with its author’s full name
+
 DROP TABLE IF EXISTS `research_paper_collaboration_network`.`ViewPapers`;
 USE `research_paper_collaboration_network`;
 CREATE OR REPLACE VIEW ViewPapers AS
@@ -120,9 +110,9 @@ JOIN paper_author_xref xref ON p.paper_id = xref.paper_author_xref_papers_id
 JOIN authors a ON a.author_id = xref.paper_author_xref_authors_id
 ORDER BY p.paper_id;
 
--- -----------------------------------------------------
--- View `research_paper_collaboration_network`.`ViewPaperNetwork`
--- -----------------------------------------------------
+-- View: ViewPaperNetwork
+-- Shows which papers cite others and who wrote them
+
 DROP TABLE IF EXISTS `research_paper_collaboration_network`.`ViewPaperNetwork`;
 USE `research_paper_collaboration_network`;
 CREATE OR REPLACE VIEW ViewPaperNetwork AS

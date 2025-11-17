@@ -1,0 +1,68 @@
+DEBUG:MySQLPersistenceWrapper:2025-11-10 10:56:47,952:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 10:56:47,953:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-10 10:56:47,953:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-10 10:56:48,058:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 10:56:48,058:Running query...
+DEBUG:MySQLPersistenceWrapper:2025-11-10 10:56:48,073:Running query...
+DEBUG:MySQLPersistenceWrapper:2025-11-10 11:34:53,525:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 11:34:53,526:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-10 11:34:53,526:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-10 11:34:53,584:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-10 11:34:53,584:__init__:It works!
+DEBUG:UserInterface:2025-11-10 11:34:53,584:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 11:34:53,584:Running query...
+DEBUG:UserInterface:2025-11-10 11:34:53,586:__init__:Query line works!
+DEBUG:UserInterface:2025-11-10 11:34:53,586:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 11:34:53,586:Running query...
+DEBUG:UserInterface:2025-11-10 11:34:53,586:start:Query line works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 17:50:32,130:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 17:50:32,130:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-10 17:50:32,130:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-10 17:50:32,218:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-10 17:50:32,218:__init__:It works!
+DEBUG:UserInterface:2025-11-10 17:50:32,218:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 17:50:32,218:Running query...
+DEBUG:UserInterface:2025-11-10 17:50:32,221:__init__:Query line works!
+DEBUG:UserInterface:2025-11-10 17:50:32,221:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 17:50:32,221:Running query...
+DEBUG:UserInterface:2025-11-10 17:50:32,222:start:Query line works!
+DEBUG:UserInterface:2025-11-10 17:50:32,222:start: Row: {'paper_id': 1, 'paper_name': 'Machine Learning for Climate Models'}
+DEBUG:UserInterface:2025-11-10 17:50:32,222:start: Row: {'paper_id': 2, 'paper_name': 'Neural Graph Architectures'}
+DEBUG:UserInterface:2025-11-10 17:50:32,222:start: Row: {'paper_id': 3, 'paper_name': 'Quantum Encryption Protocols'}
+DEBUG:UserInterface:2025-11-10 17:50:32,222:start: Row: {'paper_id': 4, 'paper_name': 'Blockchain for Healthcare'}
+DEBUG:UserInterface:2025-11-10 17:50:32,222:start: Row: {'paper_id': 5, 'paper_name': 'Ethical AI Governance'}
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:30:41,445:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:30:41,445:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:30:41,445:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:30:41,538:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-10 19:30:41,538:__init__:It works!
+DEBUG:UserInterface:2025-11-10 19:30:41,538:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:30:41,538:Running query...
+DEBUG:UserInterface:2025-11-10 19:30:41,543:__init__:Query line works!
+DEBUG:UserInterface:2025-11-10 19:30:41,543:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:30:41,543:Running query...
+DEBUG:UserInterface:2025-11-10 19:30:41,544:start:Query line works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:45:18,766:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:45:18,766:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:45:18,766:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:45:18,843:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-10 19:45:18,843:__init__:It works!
+DEBUG:UserInterface:2025-11-10 19:45:18,843:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:45:18,844:Running query...
+DEBUG:UserInterface:2025-11-10 19:45:18,845:__init__:Query line works!
+DEBUG:UserInterface:2025-11-10 19:45:18,845:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:45:18,845:Running query...
+DEBUG:UserInterface:2025-11-10 19:45:18,847:start:Query line works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:47:03,610:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:47:03,610:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:47:03,610:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:47:03,684:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-10 19:47:03,684:__init__:It works!
+DEBUG:UserInterface:2025-11-10 19:47:03,684:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:47:03,684:Running query...
+DEBUG:UserInterface:2025-11-10 19:47:03,685:__init__:Query line works!
+DEBUG:UserInterface:2025-11-10 19:47:03,685:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-11-10 19:47:03,685:Running query...
+DEBUG:UserInterface:2025-11-10 19:47:03,686:start:Query line works!
+DEBUG:AppServices:2025-11-17 14:53:43,497:__init__:It works!
+DEBUG:UserInterface:2025-11-17 14:53:43,497:__init__:It works!

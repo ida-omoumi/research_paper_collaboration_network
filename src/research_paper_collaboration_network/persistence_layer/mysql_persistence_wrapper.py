@@ -5,6 +5,7 @@ from mysql import connector
 from mysql.connector.pooling import (MySQLConnectionPool)
 import inspect
 import json
+from typing import List
 
 class MySQLPersistenceWrapper(ApplicationBase):
 	"""Implements the MySQLPersistenceWrapper class."""
@@ -35,13 +36,14 @@ class MySQLPersistenceWrapper(ApplicationBase):
 		
 
 		# SQL String Constants
-
+		
+		#photos:)
 
 
 
 
 	# MySQLPersistenceWrapper Methods
-	def execute_query(self, query:str, params:tuple=None)->list:
+	"""def execute_query(self, query:str, params:tuple=None)->list:
 		self._logger.log_debug(f'Running query...')
 		connection = self._connection_pool.get_connection()
 		db_cursor = connection.cursor(dictionary=True)
@@ -49,10 +51,9 @@ class MySQLPersistenceWrapper(ApplicationBase):
 		results = db_cursor.fetchall()
 		db_cursor.close()
 		connection.close()
-		return results
-	#add ex
+		return results"""
+	#add photo:)
 	
-
 
 
 
