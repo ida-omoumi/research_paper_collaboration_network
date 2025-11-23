@@ -16,21 +16,21 @@ def main():
 		with open(args.configfile, 'r') as f:
 			config = json.loads(f.read())
 
-	#ui = UserInterface(config)
-	#ui.start()
-	db = MySQLPersistenceWrapper(config)
-	results = db.select_all_authors()
-	print(results)	
+	ui = UserInterface(config)
+	ui.start()
+	#db = MySQLPersistenceWrapper(config)
+	#results = db.select_all_authors()
+	#print(results)	
 
 
 	app_services = AppServices(config)
 	results = app_services.get_all_authors()
 
-	for row in results:
-		print(f'{row[0]} {row[1]} {row[2]} {row[3]}')		
+	# for row in results:
+#		print(f'{row[0]} {row[1]} {row[2]} {row[3]}')		
 
-	print()
-	print(f'{app_services.get_all_authors_as_json()}')
+#	print()
+	#print(f'{app_services.get_all_authors_as_json()}')
 		
 
 

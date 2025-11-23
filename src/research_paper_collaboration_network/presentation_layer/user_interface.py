@@ -5,6 +5,7 @@ from research_paper_collaboration_network.service_layer.app_services import AppS
 import inspect
 import json
 import sys
+from prettytable import PrettyTable
 
 class UserInterface(ApplicationBase):
     """UserInterface Class Definition."""
@@ -28,21 +29,26 @@ class UserInterface(ApplicationBase):
         print(f'\t1.Author List')
         print(f'\t6.Exit')
     def process_menu_choice(self):
-        menu_choice = input("\tSelection")
+        menu_choice = input("\tSelection: ")
         match menu_choice[0]:
             case '1': self.list_authors()
-            case '6': sys.exit
+            case '6': sys.exit()
 
     def list_authors(self):
         try:
             results = self.app_services.get_all_authors()
-            print(results)
+            table = PrettyTable()
+            table.field_names = ['ID', 'First Name', 'Middle Name', 'Last Name']
+            for row in results:
+                table.add_row( [row[0], row[1], row[2], row[3]])
+            print(table)
 
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 
     def start(self):
         """Start main user interface."""
-
-        self.display_menu()
+        while True:
+            self.display_menu()
+            self.process_menu_choice()
     
