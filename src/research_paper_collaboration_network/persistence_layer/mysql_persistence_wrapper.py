@@ -35,25 +35,52 @@ class MySQLPersistenceWrapper(ApplicationBase):
 			self._initialize_database_connection_pool(self.DB_CONFIG)
 		
 
-		# SQL String Constants
-		
-		#photos:)
+		# SQL Query Constants
+
+		self.SELECT_ALL_AUTHORS = (
+   			f"SELECT authors.id, authors.first_name, authors.middle_name, authors.last_name "
+   			f"FROM authors;"
+)
+
+		self.SELECT_ALL_PAPERS = (
+    		f"SELECT papers.id, papers.paper_title, papers.publication_year, papers.category "
+    		f"FROM papers;"
+)
+
+		self.SELECT_ALL_AUTHORS_WITH_PAPERS = (
+    		f"SELECT authors.id, authors.first_name, authors.last_name, papers.paper_title, 		paper_author_xref.contribution "
+    		f"FROM authors "
+    		f"JOIN paper_author_xref ON authors.id = paper_author_xref.author_id "
+    		f"JOIN papers ON papers.id = paper_author_xref.paper_id;"
+)
+
+
+	
+	
 
 
 
 
 	# MySQLPersistenceWrapper Methods
-	"""def execute_query(self, query:str, params:tuple=None)->list:
-		self._logger.log_debug(f'Running query...')
-		connection = self._connection_pool.get_connection()
-		db_cursor = connection.cursor(dictionary=True)
-		db_cursor.execute(query, params or ())
-		results = db_cursor.fetchall()
-		db_cursor.close()
-		connection.close()
-		return results"""
-	#add photo:)
-	
+
+	def select_all_authors(self)->List:
+		"""Returns a list of employee objects."""
+		cursor = None
+		results = None
+		
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor:
+					cursor.execute(self.SELECT_ALL_AUTHORS)
+					results = cursor.fetchall()
+		
+			return results
+
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+			
 
 
 

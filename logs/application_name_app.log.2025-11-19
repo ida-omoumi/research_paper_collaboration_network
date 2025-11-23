@@ -1,0 +1,36 @@
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:19:10,017:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:19:10,018:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:19:10,018:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:19:10,174:_initialize_database_connection_pool: Connection pool successfully created!
+ERROR:MySQLPersistenceWrapper:2025-11-19 16:19:10,175:select_all_authors: 1054 (42S22): Unknown column 'id' in 'field list'
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:32:27,759:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:32:27,759:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:32:27,759:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:32:27,857:_initialize_database_connection_pool: Connection pool successfully created!
+ERROR:MySQLPersistenceWrapper:2025-11-19 16:32:27,859:select_all_authors: 1054 (42S22): Unknown column 'id' in 'field list'
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:32:52,812:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:32:52,812:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:32:52,812:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:32:52,886:_initialize_database_connection_pool: Connection pool successfully created!
+ERROR:MySQLPersistenceWrapper:2025-11-19 16:32:52,887:select_all_authors: 1109 (42S02): Unknown table 'authors' in field list
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:34:47,969:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:34:47,969:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:34:47,969:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:34:48,052:_initialize_database_connection_pool: Connection pool successfully created!
+ERROR:MySQLPersistenceWrapper:2025-11-19 16:34:48,053:select_all_authors: 1109 (42S02): Unknown table 'authors' in field list
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:36:58,629:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:36:58,629:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:36:58,629:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:36:58,719:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:37:57,587:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:37:57,587:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:37:57,587:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:37:57,690:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:38:59,731:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:38:59,731:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:38:59,731:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:38:59,831:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:39:51,044:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:39:51,045:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:39:51,045:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-19 16:39:51,136:_initialize_database_connection_pool: Connection pool successfully created!

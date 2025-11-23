@@ -1,0 +1,4 @@
+DEBUG:MySQLPersistenceWrapper:2025-11-22 14:58:04,951:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-22 14:58:04,951:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-22 14:58:04,951:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-22 14:58:05,115:_initialize_database_connection_pool: Connection pool successfully created!

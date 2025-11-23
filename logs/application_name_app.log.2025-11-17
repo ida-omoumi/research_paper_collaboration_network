@@ -1,0 +1,115 @@
+DEBUG:MySQLPersistenceWrapper:2025-11-17 14:53:43,386:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 14:53:43,386:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 14:53:43,386:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-17 14:53:43,497:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:23:25,732:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:23:25,732:__init__: DB Connection Config Dict: {'database': 'research_paper_collaboration_network', 'user': 'root', 'password': 'barbieida', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:23:25,732:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:23:25,825:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-17 16:23:25,825:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:23:25,825:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:24:00,989:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:24:00,989:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': '127.0.0.1', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:24:00,989:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:24:01,013:_initialize_database_connection_pool: Problem creating connection pool: 1045 (28000): Access denied for user 'idaloo'@'localhost' (using password: NO)
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:24:01,013:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "127.0.0.1", "port": 3306}}}
+DEBUG:AppServices:2025-11-17 16:24:01,013:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:24:01,013:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:25:44,267:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:25:44,267:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 3306}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:25:44,267:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:25:44,296:_initialize_database_connection_pool: Problem creating connection pool: 1045 (28000): Access denied for user 'idaloo'@'localhost' (using password: NO)
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:25:44,302:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 3306}}}
+DEBUG:AppServices:2025-11-17 16:25:44,302:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:25:44,302:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:26:37,377:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:26:37,378:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:26:37,378:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:26:57,390:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:26:57,390:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+DEBUG:AppServices:2025-11-17 16:26:57,391:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:26:57,391:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:32:03,359:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:32:03,360:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:32:03,360:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:32:23,373:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:32:23,374:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+DEBUG:AppServices:2025-11-17 16:32:23,375:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:32:23,375:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:32:23,375:__init__:Query line works!
+DEBUG:UserInterface:2025-11-17 16:32:23,375:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:32:59,435:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:32:59,435:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:32:59,435:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:33:19,442:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:33:19,443:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+DEBUG:AppServices:2025-11-17 16:33:19,443:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:33:19,443:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:33:19,443:__init__:Query line works!
+DEBUG:UserInterface:2025-11-17 16:33:19,443:start: User interface started!
+DEBUG:UserInterface:2025-11-17 16:33:19,443:start:Query line works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:34:47,506:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:34:47,506:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:34:47,506:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:35:07,512:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:35:07,513:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+DEBUG:AppServices:2025-11-17 16:35:07,513:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:35:07,513:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:35:07,513:__init__:Query line works!
+DEBUG:UserInterface:2025-11-17 16:35:07,514:start: User interface started!
+DEBUG:UserInterface:2025-11-17 16:35:07,514:start:Query line works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:36:32,524:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:36:32,525:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:36:32,525:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:36:52,538:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:36:52,538:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+DEBUG:AppServices:2025-11-17 16:36:52,539:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:36:52,539:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:36:52,539:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:55:51,283:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:55:51,283:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 16:55:51,283:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:56:11,296:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 16:56:11,297:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+DEBUG:AppServices:2025-11-17 16:56:11,297:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:56:11,297:__init__:It works!
+DEBUG:UserInterface:2025-11-17 16:56:11,297:start: User interface started!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 17:00:55,739:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 17:00:55,740:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 17:00:55,740:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 17:01:15,751:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 17:01:15,752:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+ERROR:MySQLPersistenceWrapper:2025-11-17 17:01:15,753:select_all_authors: 'NoneType' object has no attribute 'get_connection'
+DEBUG:MySQLPersistenceWrapper:2025-11-17 17:06:36,191:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 17:06:36,192:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 17:06:36,192:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 17:06:56,204:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 17:06:56,206:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+ERROR:MySQLPersistenceWrapper:2025-11-17 17:06:56,207:select_all_authors: 'NoneType' object has no attribute 'get_connection'
+DEBUG:MySQLPersistenceWrapper:2025-11-17 18:32:38,251:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 18:32:38,251:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8888}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 18:32:38,251:Creating connection pool...
+ERROR:MySQLPersistenceWrapper:2025-11-17 18:32:58,263:_initialize_database_connection_pool: Problem creating connection pool: 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+ERROR:MySQLPersistenceWrapper:2025-11-17 18:32:58,263:_initialize_database_connection_pool: Check DB cnfg:
+{"pool": {"name": "app_name_db_bool", "size": 10, "reset_session": true, "use_pure": true}, "connection": {"config": {"database": "research_paper_network", "user": "idaloo", "password": "", "host": "localhost", "port": 8888}}}
+ERROR:MySQLPersistenceWrapper:2025-11-17 18:32:58,263:select_all_authors: 'NoneType' object has no attribute 'get_connection'
+DEBUG:MySQLPersistenceWrapper:2025-11-17 19:18:07,950:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 19:18:07,950:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 19:18:07,950:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-17 19:18:08,329:_initialize_database_connection_pool: Connection pool successfully created!
+ERROR:MySQLPersistenceWrapper:2025-11-17 19:18:08,330:select_all_authors: 1054 (42S22): Unknown column 'id' in 'field list'
+DEBUG:MySQLPersistenceWrapper:2025-11-17 19:38:09,271:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-17 19:38:09,272:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-17 19:38:09,272:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-17 19:38:09,371:_initialize_database_connection_pool: Connection pool successfully created!
+ERROR:MySQLPersistenceWrapper:2025-11-17 19:38:09,372:select_all_authors: 1054 (42S22): Unknown column 'id' in 'field list'
