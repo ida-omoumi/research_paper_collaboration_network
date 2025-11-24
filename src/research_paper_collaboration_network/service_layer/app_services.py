@@ -26,15 +26,38 @@ class AppServices(ApplicationBase):
         
         except Exception as e:
             self._logger.log_error(f'{inspect. currentframe().f_code.co_name}:It works!')
-    
-    def get_all_authors_as_json(self)->List:
-        """Returns a list of authors from the persistence layer."""
+
+    def get_all_papers(self)->List:
+        """Returns a list of papers from the persistence layer."""
 
         try:
+            results = self.DB.select_all_papers()
+            return results
+        
+        except Exception as e:
+            self._logger.log_error(f'{inspect. currentframe().f_code.co_name}:It works!')
+
+    def get_all_authors_with_papers(self)->List:
+        """Returns joined list of authors and their papers."""
+
+        try:
+            results = self.DB.select_all_authors_with_papers()
+            return results
+        
+        except Exception as e:
+            self._logger.log_error(f'{inspect. currentframe().f_code.co_name}:It works!')
+
+    
+""" def get_all_authors_as_json(self)->List:
+        # Returns a list of authors from the persistence layer.
+
+"""
+"""
+     try:
             results = self.DB.select_all_authors()
             return json.dumps(results)
     
 
         except Exception as e:
             self._logger.log_error(f'{inspect. currentframe().f_code.co_name}:It works!')
-    
+ """ 

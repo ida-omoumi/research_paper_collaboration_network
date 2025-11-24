@@ -48,11 +48,13 @@ class MySQLPersistenceWrapper(ApplicationBase):
 )
 
 		self.SELECT_ALL_AUTHORS_WITH_PAPERS = (
-    		f"SELECT authors.id, authors.first_name, authors.last_name, papers.paper_title, 		paper_author_xref.contribution "
-    		f"FROM authors "
-    		f"JOIN paper_author_xref ON authors.id = paper_author_xref.author_id "
-    		f"JOIN papers ON papers.id = paper_author_xref.paper_id;"
+    		"SELECT authors.id, authors.first_name, authors.middle_name, authors.last_name, "
+    		"papers.paper_title, paper_author_xref.contribution "
+   			 "FROM authors "
+   		 	"JOIN paper_author_xref ON authors.id = paper_author_xref.author_id "
+   			 "JOIN papers ON papers.id = paper_author_xref.paper_id;"
 )
+
 
 
 	
@@ -64,7 +66,7 @@ class MySQLPersistenceWrapper(ApplicationBase):
 	# MySQLPersistenceWrapper Methods
 
 	def select_all_authors(self)->List:
-		"""Returns a list of employee objects."""
+		"""Returns a list of authors."""
 		cursor = None
 		results = None
 		
@@ -81,6 +83,46 @@ class MySQLPersistenceWrapper(ApplicationBase):
 		except Exception as e:
 			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 			
+	def select_all_papers(self)->List:
+		"""Returns a list of papers."""
+		cursor = None
+		results = None
+		
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor:
+					cursor.execute(self.SELECT_ALL_PAPERS)
+					results = cursor.fetchall()
+		
+			return results
+
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+	def select_all_authors_with_papers(self)->List:
+		"""Returns joined list of authors and their papers."""
+		cursor = None
+		results = None
+		
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor:
+					cursor.execute(self.SELECT_ALL_AUTHORS_WITH_PAPERS)
+					results = cursor.fetchall()
+		
+			return results
+
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
 
 
 
