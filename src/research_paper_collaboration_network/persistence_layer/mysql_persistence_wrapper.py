@@ -69,9 +69,24 @@ class MySQLPersistenceWrapper(ApplicationBase):
   		  "DELETE FROM authors WHERE id=%s"
 		)
 
+		self.INSERT_PAPER = (
+    		f"INSERT INTO papers (paper_title, publication_year, category) "
+   			f"VALUES (%s, %s, %s)"
+		)
 
-	
-	
+		self.UPDATE_PAPER = (
+  		 	f"UPDATE papers SET paper_title=%s, publication_year=%s, category=%s"
+  		  	f"WHERE id=%s"
+		)
+
+		self.DELETE_PAPER = (
+  			f"DELETE FROM papers WHERE id=%s"
+		)
+		self.INSERT_AUTHOR_PAPER_LINK = (
+    		f"INSERT INTO paper_author_xref (author_id, paper_id, contribution) "
+    		f"VALUES (%s, %s, %s);"
+)
+
 
 
 
@@ -181,7 +196,63 @@ class MySQLPersistenceWrapper(ApplicationBase):
 
 
 
+	def insert_paper(self, paper_title, publication_year, category):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor:
+					cursor.execute(self.INSERT_PAPER, ([paper_title, publication_year, category]))
+					connection.commit()
 
+					return cursor.lastrowid
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+	def update_paper(self, paper_id , paper_title, publication_year, category):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor:
+					cursor.execute(self.UPDATE_PAPER
+					, ([paper_title, publication_year, category, paper_id]))
+					connection.commit()
+				
+					return cursor.rowcount
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+	def delete_paper(self, paper_id):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor: 
+					cursor.execute(self.DELETE_PAPER, ([paper_id]))
+					connection.commit()
+					return cursor.rowcount
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+	def link_author_to_paper(self, author_id, paper_id, contribution):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor: 
+					cursor.execute(
+               		self.INSERT_AUTHOR_PAPER_LINK,
+                	([author_id, paper_id, contribution]))
+					connection.commit()
+					return cursor.rowcount
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 
 
 

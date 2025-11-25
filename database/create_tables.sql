@@ -65,27 +65,27 @@ ALTER TABLE `papers`
 
 -- Create paper_author_xref table
 CREATE TABLE `paper_author_xref` (
-  `paper_id` int(11) NOT NULL,
   `author_id` int(11) NOT NULL,
+  `paper_id` int(11) NOT NULL,
   `contribution` DECIMAL(5,2) NOT NULL
 );
 
 -- Create indexes on paper_id and author_id columns
 ALTER TABLE `paper_author_xref`
-  ADD KEY `paper_author_ibfk_1` (`paper_id`),
-  ADD KEY `paper_author_ibfk_2` (`author_id`);
+  ADD KEY `paper_author_ibfk_1` (`author_id`),
+  ADD KEY `paper_author_ibfk_2` (`paper_id`);
 
 -- Add Cascade Delete Constraint on paper_id column
 ALTER TABLE `paper_author_xref`
   ADD CONSTRAINT `paper_author_ibfk_1`
-  FOREIGN KEY (`paper_id`) REFERENCES `papers` (`id`)
+  FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`)
   ON DELETE CASCADE
   ON UPDATE CASCADE;
 
 -- Add Cascade Delete Constraint on author_id column
 ALTER TABLE `paper_author_xref`
   ADD CONSTRAINT `paper_author_ibfk_2`
-  FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`)
+  FOREIGN KEY (`paper_id`) REFERENCES `papers` (`id`)
   ON DELETE CASCADE
   ON UPDATE CASCADE;
   

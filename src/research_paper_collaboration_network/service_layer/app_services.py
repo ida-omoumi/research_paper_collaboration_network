@@ -16,6 +16,7 @@ class AppServices(ApplicationBase):
         self.DB = MySQLPersistenceWrapper(config)
         self._logger.log_debug(f'{inspect.currentframe().f_code.co_name}:It works!')
 
+
     
     def get_all_authors(self)->List:
         """Returns a list of authors from the persistence layer."""
@@ -27,6 +28,7 @@ class AppServices(ApplicationBase):
         except Exception as e:
             self._logger.log_error(f'{inspect. currentframe().f_code.co_name}:It works!')
 
+
     def get_all_papers(self)->List:
         """Returns a list of papers from the persistence layer."""
 
@@ -36,6 +38,7 @@ class AppServices(ApplicationBase):
         
         except Exception as e:
             self._logger.log_error(f'{inspect. currentframe().f_code.co_name}:It works!')
+
 
     def get_all_authors_with_papers(self)->List:
         """Returns joined list of authors and their papers."""
@@ -48,17 +51,20 @@ class AppServices(ApplicationBase):
             self._logger.log_error(f'{inspect. currentframe().f_code.co_name}:It works!')
 
 
+
     def create_author(self, first_name, middle_name, last_name):
         try:
             return self.DB.insert_author(first_name, middle_name, last_name)
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 
+
     def update_author(self, author_id, first_name, middle_name, last_name):
         try:
             return self.DB.update_author(author_id, first_name, middle_name, last_name)
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
 
     def delete_author(self, author_id):
         try:
@@ -67,6 +73,36 @@ class AppServices(ApplicationBase):
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 
     
+    def create_paper(self, paper_title, publication_year, category):
+        try:
+            return self.DB.insert_paper(paper_title, publication_year, category)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+    def update_paper(self, paper_id, paper_title, publication_year, category):
+        try:
+            return self.DB.update_paper(paper_id, paper_title, publication_year, category)
+            
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+    def delete_paper(self, paper_id):
+        try:
+            return self.DB.delete_paper(paper_id)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+    def link_author_to_paper(self, author_id, paper_id, contribution):
+        try:
+            return self.DB.link_author_to_paper(author_id, paper_id, contribution)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+
 """ def get_all_authors_as_json(self)->List:
         # Returns a list of authors from the persistence layer.
 

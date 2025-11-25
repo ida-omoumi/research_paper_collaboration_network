@@ -1,0 +1,480 @@
+DEBUG:MySQLPersistenceWrapper:2025-11-24 10:56:01,414:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 10:56:01,414:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 10:56:01,414:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 10:56:01,557:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 11:22:18,591:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 11:22:18,591:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 11:22:18,592:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 11:22:18,681:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 11:22:18,681:__init__:It works!
+DEBUG:UserInterface:2025-11-24 11:22:18,681:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:21:08,298:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:21:08,298:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:21:08,298:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:21:08,395:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:21:08,395:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:21:08,395:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:24:28,407:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:24:28,407:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:24:28,407:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:24:28,480:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:24:28,480:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:24:28,480:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:24:34,211:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:24:55,787:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:24:55,787:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:24:55,787:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:24:55,857:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:24:55,857:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:24:55,857:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:24:57,435:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:26:53,354:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:26:53,354:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:26:53,354:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:26:53,428:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:26:53,429:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:26:53,429:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:26:54,107:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:28:40,740:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:28:40,740:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:28:40,740:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:28:40,804:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:28:40,804:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:28:40,804:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:28:41,708:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:29:18,432:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:29:18,433:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:29:18,433:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:29:18,502:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:29:18,502:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:29:18,502:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:29:23,274:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:30:46,476:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:30:46,476:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:30:46,476:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:30:46,555:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:30:46,555:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:30:46,555:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:30:54,284:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:37:43,583:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:37:43,583:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:37:43,583:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:37:43,651:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:37:43,651:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:37:43,651:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:37:45,955:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:04,584:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:04,584:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:04,584:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:04,665:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:40:04,665:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:40:04,666:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:40:05,714:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:32,419:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:32,419:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:32,419:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:32,494:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:40:32,494:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:40:32,494:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:40:33,273:list_authors_with_papers: tuple index out of range
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:46,236:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:46,236:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:46,236:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:46,312:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:40:46,313:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:40:46,313:__init__:It works!
+ERROR:UserInterface:2025-11-24 12:40:47,415:list_authors_with_papers: Row has incorrect number of values, (actual) 1!=6 (expected)
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:58,413:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:58,413:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:58,413:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:40:58,487:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:40:58,487:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:40:58,487:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:41:28,052:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:41:28,052:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:41:28,052:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:41:28,131:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:41:28,131:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:41:28,131:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:44:18,693:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:44:18,693:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:44:18,693:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:44:18,770:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:44:18,770:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:44:18,770:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:45:46,587:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:45:46,587:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:45:46,587:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 12:45:46,662:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 12:45:46,662:__init__:It works!
+DEBUG:UserInterface:2025-11-24 12:45:46,662:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 14:35:18,246:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 14:35:18,247:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 14:35:18,247:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 14:35:18,421:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 14:35:18,422:__init__:It works!
+DEBUG:UserInterface:2025-11-24 14:35:18,422:__init__:It works!
+ERROR:AppServices:2025-11-24 14:35:48,075:delete_author: MySQLPersistenceWrapper.insert_author() missing 2 required positional arguments: 'middle_name' and 'last_name'
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:42:22,269:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:42:22,269:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:42:22,269:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:42:22,421:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:42:22,421:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:42:22,421:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:43:46,693:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:43:46,693:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:43:46,693:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:43:46,754:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:43:46,754:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:43:46,754:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 18:44:08,598:delete_author: Not enough parameters for the SQL statement
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:46:33,406:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:46:33,406:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:46:33,406:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:46:33,467:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:46:33,467:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:46:33,467:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 18:46:37,957:delete_author: Could not process parameters: str(6), it must be of type list, tuple or dict
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:49:50,159:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:49:50,160:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:49:50,160:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:49:50,233:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:49:50,233:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:49:50,233:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:51:02,175:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:51:02,175:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:51:02,175:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:51:02,253:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:51:02,253:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:51:02,253:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 18:51:06,705:delete_author: Could not process parameters: str(6), it must be of type list, tuple or dict
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:51:29,094:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:51:29,094:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:51:29,094:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:51:29,173:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:51:29,174:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:51:29,174:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 18:51:33,770:delete_author: Could not process parameters: str(6), it must be of type list, tuple or dict
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:53:15,577:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:53:15,577:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:53:15,577:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:53:15,643:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:53:15,643:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:53:15,643:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 18:53:21,075:delete_author: Could not process parameters: str(1), it must be of type list, tuple or dict
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:53:23,014:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:53:23,014:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:53:23,014:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:53:23,074:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:53:23,074:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:53:23,074:__init__:It works!
+ERROR:AppServices:2025-11-24 18:53:40,457:update_author: MySQLPersistenceWrapper.insert_author() takes 4 positional arguments but 5 were given
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:55:23,002:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:55:23,002:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:55:23,002:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:55:23,077:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:55:23,077:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:55:23,077:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 18:55:26,296:delete_author: Could not process parameters: str(6), it must be of type list, tuple or dict
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:55:32,691:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:55:32,691:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:55:32,691:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:55:32,758:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:55:32,758:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:55:32,758:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:56:27,961:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:56:27,961:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:56:27,961:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:56:28,022:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:56:28,022:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:56:28,022:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 18:56:31,775:delete_author: Could not process parameters: str(6), it must be of type list, tuple or dict
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:58:51,608:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:58:51,608:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:58:51,608:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:58:51,681:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 18:58:51,681:__init__:It works!
+DEBUG:UserInterface:2025-11-24 18:58:51,681:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 18:58:53,762:delete_author: 1
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:01:36,439:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:01:36,440:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:01:36,440:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:01:36,517:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:01:36,517:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:01:36,517:__init__:It works!
+ERROR:AppServices:2025-11-24 19:02:28,579:update_author: MySQLPersistenceWrapper.insert_author() takes 4 positional arguments but 5 were given
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:02:35,045:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:02:35,045:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:02:35,045:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:02:35,109:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:02:35,109:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:02:35,110:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:02:49,819:delete_author: 1
+ERROR:AppServices:2025-11-24 19:03:11,318:update_author: MySQLPersistenceWrapper.insert_author() takes 4 positional arguments but 5 were given
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:03:13,456:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:03:13,456:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:03:13,456:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:03:13,517:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:03:13,517:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:03:13,517:__init__:It works!
+ERROR:AppServices:2025-11-24 19:03:23,754:update_author: MySQLPersistenceWrapper.insert_author() takes 4 positional arguments but 5 were given
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:18:46,458:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:18:46,458:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:18:46,458:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:18:46,526:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:18:46,526:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:18:46,526:__init__:It works!
+ERROR:AppServices:2025-11-24 19:20:19,334:update_author: MySQLPersistenceWrapper.insert_author() takes 4 positional arguments but 5 were given
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:20:59,341:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:20:59,341:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:20:59,341:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:20:59,423:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:20:59,423:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:20:59,423:__init__:It works!
+ERROR:AppServices:2025-11-24 19:21:23,009:update_author: MySQLPersistenceWrapper.insert_author() takes 4 positional arguments but 5 were given
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:21:26,952:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:21:26,952:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:21:26,952:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:21:27,034:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:21:27,034:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:21:27,034:__init__:It works!
+ERROR:AppServices:2025-11-24 19:23:00,500:update_author: MySQLPersistenceWrapper.insert_author() takes 4 positional arguments but 5 were given
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:25:43,000:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:25:43,000:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:25:43,000:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:25:43,086:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:25:43,086:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:25:43,086:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:29:45,174:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:29:45,174:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:29:45,174:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:29:45,261:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:29:45,261:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:29:45,261:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:29:52,244:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:29:52,244:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:29:52,244:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:29:52,318:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:29:52,319:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:29:52,319:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:31:31,304:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:31:31,304:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:31:31,304:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:31:31,379:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:31:31,379:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:31:31,379:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:32:00,696:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:32:00,696:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:32:00,696:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:32:00,760:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:32:00,760:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:32:00,760:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:32:24,799:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:32:24,799:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:32:24,799:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:32:24,860:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:32:24,860:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:32:24,860:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:40:11,306:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:40:11,306:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:40:11,306:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 19:40:11,407:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 19:40:11,407:__init__:It works!
+DEBUG:UserInterface:2025-11-24 19:40:11,407:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:09:09,035:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:09:09,035:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:09:09,035:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:09:09,117:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:09:09,118:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:09:09,118:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 20:09:26,781:delete_author: 1292 (22007): Truncated incorrect DOUBLE value: 'Paper Sample'
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:10:04,080:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:10:04,080:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:10:04,080:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:10:04,166:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:10:04,166:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:10:04,167:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 20:10:14,091:delete_author: 1292 (22007): Truncated incorrect DOUBLE value: 'Sample'
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:11:13,573:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:11:13,574:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:11:13,574:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:11:13,641:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:11:13,641:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:11:13,641:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 20:11:17,096:delete_author: 1292 (22007): Truncated incorrect DOUBLE value: 'sample'
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:13:13,156:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:13:13,156:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:13:13,156:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:13:13,236:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:13:13,236:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:13:13,236:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:13:24,666:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:13:24,666:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:13:24,666:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:13:24,749:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:13:24,749:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:13:24,749:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:14:05,018:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:14:05,018:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:14:05,018:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:14:05,098:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:14:05,098:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:14:05,098:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:14:23,137:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:14:23,138:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:14:23,138:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:14:23,219:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:14:23,220:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:14:23,220:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:17:55,107:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:17:55,107:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:17:55,107:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:17:55,177:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:17:55,177:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:17:55,177:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:11,033:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:11,034:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:11,034:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:11,113:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:23:11,114:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:23:11,114:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 20:23:16,688:delete_paper: Python type list cannot be converted
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:19,727:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:19,727:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:19,727:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:19,807:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:23:19,807:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:23:19,807:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:38,606:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:38,606:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:38,606:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:23:38,682:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:23:38,682:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:23:38,682:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:24:00,621:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:24:00,621:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:24:00,621:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:24:00,702:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:24:00,702:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:24:00,702:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:24:27,135:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:24:27,135:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:24:27,135:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:24:27,217:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:24:27,218:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:24:27,218:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:25:09,973:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:25:09,974:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:25:09,974:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:25:10,056:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:25:10,056:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:25:10,056:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:27:14,402:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:27:14,402:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:27:14,402:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:27:14,489:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:27:14,489:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:27:14,489:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:28:09,103:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:28:09,103:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:28:09,103:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:28:09,182:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:28:09,182:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:28:09,182:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:29:00,281:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:29:00,281:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:29:00,281:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:29:00,364:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:29:00,364:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:29:00,364:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:30:01,008:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:30:01,008:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:30:01,008:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:30:01,074:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:30:01,074:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:30:01,074:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:31:15,837:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:31:15,837:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:31:15,837:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:31:15,898:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:31:15,898:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:31:15,898:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:32:52,925:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:32:52,925:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:32:52,925:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:32:53,011:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:32:53,011:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:32:53,011:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:36:26,326:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:36:26,326:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:36:26,327:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:36:26,414:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:36:26,414:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:36:26,414:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:37:13,521:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:37:13,522:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:37:13,522:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:37:13,595:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:37:13,595:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:37:13,595:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:39:52,160:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:39:52,160:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:39:52,160:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:39:52,236:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:39:52,236:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:39:52,236:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 20:40:25,724:update_paper: 1264 (22003): Out of range value for column 'publication_year' at row 1
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:40:36,998:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:40:36,998:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:40:36,998:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:40:37,080:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:40:37,080:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:40:37,080:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:40:56,613:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:40:56,613:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:40:56,613:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 20:40:56,681:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 20:40:56,681:__init__:It works!
+DEBUG:UserInterface:2025-11-24 20:40:56,681:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:01:29,389:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:01:29,389:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:01:29,389:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:01:29,460:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 21:01:29,460:__init__:It works!
+DEBUG:UserInterface:2025-11-24 21:01:29,460:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:02:39,337:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:02:39,338:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:02:39,338:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:02:39,413:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 21:02:39,413:__init__:It works!
+DEBUG:UserInterface:2025-11-24 21:02:39,413:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:02:46,792:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:02:46,793:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:02:46,793:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:02:46,867:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 21:02:46,868:__init__:It works!
+DEBUG:UserInterface:2025-11-24 21:02:46,868:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 21:03:07,199:link_author_to_paper: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`research_paper_network`.`paper_author_xref`, CONSTRAINT `paper_author_ibfk_2` FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ERROR:MySQLPersistenceWrapper:2025-11-24 21:07:38,906:link_author_to_paper: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`research_paper_network`.`paper_author_xref`, CONSTRAINT `paper_author_ibfk_2` FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:08:16,610:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:08:16,611:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:08:16,611:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:08:16,693:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 21:08:16,694:__init__:It works!
+DEBUG:UserInterface:2025-11-24 21:08:16,694:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:10:14,980:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:10:14,980:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:10:14,980:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:10:15,067:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 21:10:15,067:__init__:It works!
+DEBUG:UserInterface:2025-11-24 21:10:15,067:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 21:10:37,106:link_author_to_paper: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`research_paper_network`.`paper_author_xref`, CONSTRAINT `paper_author_ibfk_2` FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:12:34,629:__init__:It works!
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:12:34,629:__init__: DB Connection Config Dict: {'database': 'research_paper_network', 'user': 'idaloo', 'password': '', 'host': 'localhost', 'port': 8889}
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:12:34,629:Creating connection pool...
+DEBUG:MySQLPersistenceWrapper:2025-11-24 21:12:34,704:_initialize_database_connection_pool: Connection pool successfully created!
+DEBUG:AppServices:2025-11-24 21:12:34,704:__init__:It works!
+DEBUG:UserInterface:2025-11-24 21:12:34,704:__init__:It works!
+ERROR:MySQLPersistenceWrapper:2025-11-24 21:12:39,900:link_author_to_paper: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`research_paper_network`.`paper_author_xref`, CONSTRAINT `paper_author_ibfk_2` FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+DEBUG:AppServices:2025-11-25 12:42:09,501:__init__:It works!
+DEBUG:UserInterface:2025-11-25 12:42:09,501:__init__:It works!

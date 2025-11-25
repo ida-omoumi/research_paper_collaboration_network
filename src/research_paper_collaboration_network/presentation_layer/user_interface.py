@@ -32,7 +32,11 @@ class UserInterface(ApplicationBase):
         print(f'\t4.Add Author')
         print(f'\t5.Update Author')
         print(f'\t6.Delete Author')
-        print(f'\t7.Exit')
+        print(f'\t7.Add Paper')
+        print(f'\t8.Update Paper')
+        print(f'\t9.Delete Paper')
+        print(f'\t10.Link Author to Paper')
+        print(f'\t0.Exit')
     def process_menu_choice(self):
         menu_choice = input("\tSelection: ")
         match menu_choice[0]:
@@ -42,7 +46,11 @@ class UserInterface(ApplicationBase):
             case '4': self.add_author()
             case '5': self.update_author_ui()
             case '6': self.delete_author_ui()
-            case '7': sys.exit()
+            case '7': self.add_paper()
+            case '8': self.update_paper_ui()
+            case '9': self.delete_paper_ui()
+            case 'a': self.link_author_to_paper_ui()
+            case '0': sys.exit()
             case _: print(f'\n\n\t\t!!! Invalid Selection !!!')
             
 
@@ -58,6 +66,8 @@ class UserInterface(ApplicationBase):
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 
+
+
     def list_papers(self):
         try:
             results = self.app_services.get_all_papers()
@@ -69,6 +79,8 @@ class UserInterface(ApplicationBase):
 
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
 
     def list_authors_with_papers(self):
         try:
@@ -84,6 +96,8 @@ class UserInterface(ApplicationBase):
 
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
     def add_author(self):
         first = input("First name: ")
         middle = input("Middle name (optional): ")
@@ -94,6 +108,8 @@ class UserInterface(ApplicationBase):
             print(f"Author added with ID {new_id}")
         else:
             print("Error adding author.")
+
+
 
     def update_author_ui(self):
         author_id = input("Enter author ID to update: ")
@@ -108,6 +124,8 @@ class UserInterface(ApplicationBase):
         else:
             print("No author updated (ID may not exist).")
 
+
+
     def delete_author_ui(self):
         author_id = input("Enter author ID to delete: ")
 
@@ -117,6 +135,85 @@ class UserInterface(ApplicationBase):
         else:
             print("Author not found.")
  
+
+
+
+
+    def add_paper(self):
+        title = input("Paper title: ")
+        year = input("Publication year: ")
+        category = input("Category: ")
+
+        if not year.isdigit():
+            print("Year must be a number.")
+            return
+
+        new_id = self.app_services.create_paper(title, int(year), category)
+        if new_id:
+            print(f"Paper added with ID {new_id}")
+        else:
+            print("Error adding paper.")
+
+
+
+    def update_paper_ui(self):
+        paper_id = input("Enter paper ID to update: ")
+
+        title = input("New paper title: ")
+        year = input("New publication date (YYYY): ")
+        category = input("New category: ")
+
+        if not year.isdigit():
+            print("Year must be a number.")
+            return
+
+        rows = self.app_services.update_paper(paper_id, title, int(year), category)
+        if rows > 0:
+            print("Paper updated successfully.")
+        else:
+            print("No paper updated (ID may not exist).")
+
+
+
+    def delete_paper_ui(self):
+        paper_id = input("Enter paper ID to delete: ")
+
+        rows = self.app_services.delete_paper(paper_id)
+        if rows > 0:
+            print("Paper deleted successfully.")
+        else:
+            print("Paper not found.")
+
+
+    def link_author_to_paper_ui(self):
+        author_id = input("Enter Author ID: ")
+        if not author_id.isdigit():
+            print("Invalid Author ID. Must be a number.")
+            return
+        author_id = int(author_id)
+        
+        paper_id = input("Enter Paper ID: ")
+        if not paper_id.isdigit():
+            print("Invalid Paper ID. Must be a number.")
+            return
+        author_id = int(paper_id)
+        
+        contribution = input("Contribution percentage (0-100): ").replace("%", "")
+
+        if not contribution.isdigit():
+            print("Contribution must be a number.")
+            return
+        
+        contribution = int(contribution)
+        
+        new_id = self.app_services.link_author_to_paper(author_id, paper_id, contribution)
+
+        if new_id:
+            print("Author successfully linked to paper!")
+        else:
+            print(new_id)
+
+
 
 
 
