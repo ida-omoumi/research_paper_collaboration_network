@@ -48,13 +48,26 @@ class MySQLPersistenceWrapper(ApplicationBase):
 )
 
 		self.SELECT_ALL_AUTHORS_WITH_PAPERS = (
-    		"SELECT authors.id, authors.first_name, authors.middle_name, authors.last_name, "
-    		"papers.paper_title, paper_author_xref.contribution "
-   			 "FROM authors "
-   		 	"JOIN paper_author_xref ON authors.id = paper_author_xref.author_id "
-   			 "JOIN papers ON papers.id = paper_author_xref.paper_id;"
+    		f"SELECT authors.id, authors.first_name, authors.middle_name, authors.last_name, "
+    		f"papers.paper_title, paper_author_xref.contribution "
+   			f"FROM authors "
+   		 	f"JOIN paper_author_xref ON authors.id = paper_author_xref.author_id "
+   			f"JOIN papers ON papers.id = paper_author_xref.paper_id;"
 )
 
+		self.INSERT_AUTHOR = (
+    	"INSERT INTO authors (first_name, middle_name, last_name) "
+   		"VALUES (%s, %s, %s)"
+		)
+
+		self.UPDATE_AUTHOR = (
+  		  "UPDATE authors SET first_name=%s, middle_name=%s, last_name=%s "
+  		  "WHERE id=%s"
+		)
+
+		self.DELETE_AUTHOR = (
+  		  "DELETE FROM authors WHERE id=%s"
+		)
 
 
 	
@@ -120,6 +133,52 @@ class MySQLPersistenceWrapper(ApplicationBase):
 
 		except Exception as e:
 			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+
+
+	def insert_author(self, first_name, middle_name, last_name):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor:
+					cursor.execute(self.INSERT_AUTHOR, ([first_name, middle_name, last_name]))
+					connection.commit()
+
+					return cursor.lastrowid
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+	def update_author(self, author_id , first_name, middle_name, last_name):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor:
+					cursor.execute(self.UPDATE_AUTHOR, ([first_name, middle_name, last_name, author_id]))
+					connection.commit()
+				
+					return cursor.rowcount
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+	def delete_author(self, author_id):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor: 
+					cursor.execute(self.DELETE_AUTHOR, ([author_id]))
+					connection.commit()
+					return cursor.rowcount
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
 
 
 

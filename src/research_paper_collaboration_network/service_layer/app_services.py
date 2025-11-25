@@ -47,6 +47,25 @@ class AppServices(ApplicationBase):
         except Exception as e:
             self._logger.log_error(f'{inspect. currentframe().f_code.co_name}:It works!')
 
+
+    def create_author(self, first_name, middle_name, last_name):
+        try:
+            return self.DB.insert_author(first_name, middle_name, last_name)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+    def update_author(self, author_id, first_name, middle_name, last_name):
+        try:
+            return self.DB.update_author(author_id, first_name, middle_name, last_name)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+    def delete_author(self, author_id):
+        try:
+            return self.DB.delete_author(author_id)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
     
 """ def get_all_authors_as_json(self)->List:
         # Returns a list of authors from the persistence layer.

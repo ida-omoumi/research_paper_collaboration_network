@@ -29,14 +29,22 @@ class UserInterface(ApplicationBase):
         print(f'\t1.List of authors')
         print(f'\t2.List of papers')
         print(f'\t3.List of authors and their papers')
-        print(f'\t6.Exit')
+        print(f'\t4.Add Author')
+        print(f'\t5.Update Author')
+        print(f'\t6.Delete Author')
+        print(f'\t7.Exit')
     def process_menu_choice(self):
         menu_choice = input("\tSelection: ")
         match menu_choice[0]:
             case '1': self.list_authors()
             case '2': self.list_papers()
             case '3': self.list_authors_with_papers()
-            case '6': sys.exit()
+            case '4': self.add_author()
+            case '5': self.update_author_ui()
+            case '6': self.delete_author_ui()
+            case '7': sys.exit()
+            case _: print(f'\n\n\t\t!!! Invalid Selection !!!')
+            
 
     def list_authors(self):
         try:
@@ -76,6 +84,40 @@ class UserInterface(ApplicationBase):
 
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+    def add_author(self):
+        first = input("First name: ")
+        middle = input("Middle name (optional): ")
+        last = input("Last name: ")
+
+        new_id = self.app_services.create_author(first, middle, last)
+        if new_id:
+            print(f"Author added with ID {new_id}")
+        else:
+            print("Error adding author.")
+
+    def update_author_ui(self):
+        author_id = input("Enter author ID to update: ")
+
+        first = input("New first name: ")
+        middle = input("New middle name: ")
+        last = input("New last name: ")
+
+        rows = self.app_services.update_author(author_id, first, middle, last)
+        if rows > 0:
+            print("Author updated successfully.")
+        else:
+            print("No author updated (ID may not exist).")
+
+    def delete_author_ui(self):
+        author_id = input("Enter author ID to delete: ")
+
+        rows = self.app_services.delete_author(author_id)
+        if rows > 0:
+            print("Author deleted successfully.")
+        else:
+            print("Author not found.")
+ 
+
 
 
 
