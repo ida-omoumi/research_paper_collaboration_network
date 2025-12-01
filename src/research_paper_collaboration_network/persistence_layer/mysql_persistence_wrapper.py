@@ -104,9 +104,10 @@ class MySQLPersistenceWrapper(ApplicationBase):
     		f"WHERE paper_author_xref.paper_id = %s "
     		f"ORDER BY paper_author_xref.contribution DESC;"
 )
-
-		self.SELECT_PAPER_BY_ID = "SELECT * FROM papers WHERE id=%s;"
-
+		
+		self.SELECT_PAPER_BY_ID = (
+    		f"SELECT papers.id, papers.paper_title, papers.publication_year, papers.category "
+    		f"FROM papers WHERE id=%s;")
 
 
 
