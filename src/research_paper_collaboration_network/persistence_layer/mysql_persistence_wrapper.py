@@ -56,17 +56,17 @@ class MySQLPersistenceWrapper(ApplicationBase):
 )
 
 		self.INSERT_AUTHOR = (
-    	"INSERT INTO authors (first_name, middle_name, last_name) "
-   		"VALUES (%s, %s, %s)"
+    		f"INSERT INTO authors (first_name, middle_name, last_name) "
+   			f"VALUES (%s, %s, %s)"
 		)
 
 		self.UPDATE_AUTHOR = (
-  		  "UPDATE authors SET first_name=%s, middle_name=%s, last_name=%s "
-  		  "WHERE id=%s"
+  			f"UPDATE authors SET first_name=%s, middle_name=%s, last_name=%s "
+  			f"WHERE id=%s"
 		)
 
 		self.DELETE_AUTHOR = (
-  		  "DELETE FROM authors WHERE id=%s"
+  			f"DELETE FROM authors WHERE id=%s"
 		)
 
 		self.INSERT_PAPER = (
@@ -86,7 +86,26 @@ class MySQLPersistenceWrapper(ApplicationBase):
     		f"INSERT INTO paper_author_xref (author_id, paper_id, contribution) "
     		f"VALUES (%s, %s, %s);"
 )
+		self.UPDATE_AUTHOR_PAPER_LINK = (
+    		f"UPDATE paper_author_xref "
+    		f"SET contribution = %s "
+   			f"WHERE author_id = %s AND paper_id = %s;"
+)
+		
 
+		self.DELETE_AUTHOR_PAPER_LINK = (
+    		f"DELETE FROM paper_author_xref WHERE author_id = %s AND paper_id = %s;"
+)
+		self.SELECT_AUTHORS_BY_CONTRIBUTION = (
+			f"SELECT authors.id, authors.first_name, authors.middle_name, authors.last_name, "
+    		f"paper_author_xref.contribution "
+    		f"FROM authors "
+    		f"JOIN paper_author_xref ON authors.id = paper_author_xref.author_id "
+    		f"WHERE paper_author_xref.paper_id = %s "
+    		f"ORDER BY paper_author_xref.contribution DESC;"
+)
+
+		self.SELECT_PAPER_BY_ID = "SELECT * FROM papers WHERE id=%s;"
 
 
 
@@ -253,6 +272,76 @@ class MySQLPersistenceWrapper(ApplicationBase):
 					return cursor.rowcount
 		except Exception as e:
 			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+	def update_author_paper_link(self, author_id, paper_id, contribution):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor: 
+					cursor.execute(
+               		self.UPDATE_AUTHOR_PAPER_LINK,
+                	([contribution, author_id, paper_id]))
+					connection.commit()
+					return cursor.rowcount
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+
+	def delete_author_paper_link(self, author_id, paper_id):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor: 
+					cursor.execute(
+               		self.DELETE_AUTHOR_PAPER_LINK,
+                	(author_id, paper_id))
+					connection.commit()
+					return cursor.rowcount
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+	def select_authors_by_contribution(self, paper_id):
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor: 
+					cursor.execute(
+               		self.SELECT_AUTHORS_BY_CONTRIBUTION,
+                	([paper_id]))
+					#connection.commit()
+					return cursor.fetchall()
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+	def select_paper_by_id(self, paper_id) -> List:
+		try:
+			connection = self._connection_pool.get_connection()
+			with connection:
+				cursor = connection.cursor()
+				with cursor: 
+					cursor.execute(
+               		self.SELECT_PAPER_BY_ID,
+                	(paper_id, ))
+					#connection.commit()
+					results = cursor.fetchall()
+					return results
+
+		except Exception as e:
+			self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+
 
 
 

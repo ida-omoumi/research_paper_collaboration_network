@@ -72,12 +72,15 @@ class AppServices(ApplicationBase):
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 
+
     
     def create_paper(self, paper_title, publication_year, category):
         try:
             return self.DB.insert_paper(paper_title, publication_year, category)
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
 
 
     def update_paper(self, paper_id, paper_title, publication_year, category):
@@ -88,11 +91,15 @@ class AppServices(ApplicationBase):
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 
 
+
+
     def delete_paper(self, paper_id):
         try:
             return self.DB.delete_paper(paper_id)
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
 
     def link_author_to_paper(self, author_id, paper_id, contribution):
         try:
@@ -100,6 +107,37 @@ class AppServices(ApplicationBase):
         except Exception as e:
             self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
 
+
+
+
+    def update_author_paper_link(self, author_id, paper_id, contribution):
+        try:
+            return self.DB.update_author_paper_link(author_id, paper_id, contribution)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+    def delete_author_paper_link(self, author_id, paper_id):
+        try:
+            return self.DB.delete_author_paper_link( author_id, paper_id)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+
+    def get_authors_by_contribution(self, paper_id):
+        try:
+            return self.DB.select_authors_by_contribution(paper_id)
+        except Exception as e:
+            self._logger.log_error(f'{inspect.currentframe().f_code.co_name}: {e}')
+
+
+    def get_paper_by_id(self, paper_id):
+        try:
+            return self.DB.select_paper_by_id(paper_id)
+        except Exception as e:
+            self._logger.log_error(f"{inspect.currentframe().f_code.co_name}: {e}")
+       
 
 
 
