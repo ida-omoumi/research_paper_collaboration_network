@@ -6,6 +6,10 @@ import inspect
 import json
 import sys
 from prettytable import PrettyTable
+from prettytable.colortable import ColorTable, Themes
+from prettytable.colortable import Theme
+print([t for t in dir(Theme) if t.isupper()])
+
 
 class UserInterface(ApplicationBase):
     """UserInterface Class Definition."""
@@ -63,7 +67,7 @@ class UserInterface(ApplicationBase):
     def list_authors(self):
         try:
             results = self.app_services.get_all_authors()
-            table = PrettyTable()
+            table = ColorTable(theme=Themes.EARTH)
             table.field_names = ['ID', 'First Name', 'Middle Name', 'Last Name']
             for row in results:
                 table.add_row( [row[0], row[1], row[2], row[3]])
@@ -77,7 +81,7 @@ class UserInterface(ApplicationBase):
     def list_papers(self):
         try:
             results = self.app_services.get_all_papers()
-            table = PrettyTable()
+            table = ColorTable(theme=Themes.EARTH)
             table.field_names = ['ID', 'Title', 'Year', 'Catergory']
             for row in results:
                 table.add_row( [row[0], row[1], row[2], row[3]])
@@ -91,7 +95,7 @@ class UserInterface(ApplicationBase):
     def list_authors_with_papers(self):
         try:
             results = self.app_services.get_all_authors_with_papers()
-            table = PrettyTable()
+            table = ColorTable(theme=Themes.EARTH)
             table.field_names = ['ID', 'First Name', 'Middle Name', 'Last Name', 
             'Paper Title', 'Contribution']
             for row in results:
@@ -330,7 +334,7 @@ class UserInterface(ApplicationBase):
 
         from prettytable import PrettyTable
 
-        table = PrettyTable()
+        table = ColorTable(theme=Themes.LAVENDER)
         table.field_names = ['Author ID', 'First Name', 'Middle Name', 'Last Name', 'Contribution %']
 
         for row in results:
